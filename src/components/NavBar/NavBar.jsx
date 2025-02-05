@@ -12,20 +12,25 @@ const NavBar = () => {
         <>
             <StyledNavContainer>
                 <nav>
-                    <NavLink>
+                    <NavLink to={"/"}>
                         <GrHomeRounded />
+                        <span>Home</span>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/projects"}>
                         <FaRegFolder />
+                        <span>Projects</span>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/experience"}>
                         <FaRegFileAlt />
+                        <span>Experience</span>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/tools"}>
                         <FiSettings />
+                        <span>Tools</span>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/contact"}>
                         <LuPencilLine />
+                        <span>Contact</span>
                     </NavLink>
                 </nav>
             </StyledNavContainer>
