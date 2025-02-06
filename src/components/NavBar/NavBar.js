@@ -42,7 +42,6 @@ export const StyledNavContainer = styled.div`
         bottom: -30px;
         font-size: 1.2rem;
         color: white;
-        white-space: nowrap;
         opacity: 0;
         transform: translateY(-30px);
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
