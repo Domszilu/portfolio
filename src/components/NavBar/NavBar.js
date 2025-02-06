@@ -9,10 +9,10 @@ export const StyledNavContainer = styled.div`
     nav {
         border-radius: 20px;
         background-color: #9d9d9d;
-        width: 32rem;
+        width: 29rem;
         padding: 1rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -26,8 +26,8 @@ export const StyledNavContainer = styled.div`
 
     svg {
         color: white;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2.3rem;
+        width: 2.3rem;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
     }

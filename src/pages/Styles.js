@@ -7,6 +7,7 @@ export const StyledSeparator = styled.div`
 
 export const Wrapper = styled.div`
     display: flex;
+    justify-content: center;
     gap: 4rem;
-    padding: 5rem;
+    padding: 1rem;
 `;
