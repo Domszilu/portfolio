@@ -1,3 +1,4 @@
+import Contact from "../components/Contact/Contact.jsx";
 import NameCard from "../components/NameCard/NameCard.jsx";
 import NavBar from "../components/NavBar/NavBar.jsx";
 import { MainHeading, StyledParagraph, Wrapper } from "./Styles.js";
@@ -16,6 +17,10 @@ const Home = () => {
                     experiences. Currently looking for work that aligns with my
                     values, thus emphasizing purpose over profit.
                 </StyledParagraph>
+                <MainHeading>
+                    Let's work <span>together</span>
+                </MainHeading>
+                <Contact />
             </Wrapper>
         </>
     );
