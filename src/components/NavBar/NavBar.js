@@ -7,7 +7,7 @@ export const StyledNavContainer = styled.div`
     margin-top: 1rem;
 
     nav {
-        border-radius: 20px;
+        border-radius: 15px;
         background-color: #9d9d9d;
         width: 29rem;
         padding: 1rem;

@@ -9,12 +9,10 @@ export const StyledCardContainer = styled.div`
     gap: 3rem;
     padding: 3rem;
     border-radius: 13px;
-    width: 322px;
     margin-top: 2rem;
-    padding-bottom: 10rem;
 
     img {
-        width: 196px;
+        width: 240px;
         height: 250px;
         object-fit: cover;
         border-radius: 13px;
@@ -31,5 +29,7 @@ export const StyledCardContainer = styled.div`
         font-weight: 600;
         color: #5e5959;
         text-align: center;
+        font-size: 1.8rem;
+        max-width: 24rem;
     }
 `;

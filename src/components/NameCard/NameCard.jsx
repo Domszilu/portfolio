@@ -10,7 +10,7 @@ const NameCard = () => {
                 <h1>Dominik Mészáros</h1>
                 <p>
                     Fresh and crispy Web Developer gravitating towards
-                    meaningful projects
+                    meaningful projects.
                 </p>
             </StyledCardContainer>
         </>
