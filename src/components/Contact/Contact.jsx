@@ -1,6 +1,7 @@
 import React from "react";
 import {
     InputGroup,
+    StyledButton,
     StyledForm,
     StyledInput,
     StyledLabel,
@@ -11,10 +12,10 @@ import { MainHeading, Wrapper } from "../../pages/Styles";
 const Contact = () => {
     return (
         <>
-            <MainHeading>
-                Let's work <span>together</span>
-            </MainHeading>
             <StyledForm>
+                <MainHeading>
+                    Let's work <span>together</span>
+                </MainHeading>
                 <InputGroup>
                     <div>
                         <StyledLabel>Name</StyledLabel>
@@ -27,6 +28,7 @@ const Contact = () => {
                 </InputGroup>
                 <StyledLabel>Message</StyledLabel>
                 <StyledTextArea rows={7} placeholder="Your message" />
+                <StyledButton>Send</StyledButton>
             </StyledForm>
         </>
     );

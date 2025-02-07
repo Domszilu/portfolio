@@ -2,12 +2,7 @@ import Contact from "../components/Contact/Contact.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import NameCard from "../components/NameCard/NameCard.jsx";
 import NavBar from "../components/NavBar/NavBar.jsx";
-import {
-    DualColumnWrapper,
-    MainHeading,
-    StyledParagraph,
-    Wrapper,
-} from "./Styles.js";
+import { DualColumnWrapper, Wrapper } from "./Styles.js";
 
 const Home = () => {
     return (

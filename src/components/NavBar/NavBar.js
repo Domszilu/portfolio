@@ -5,7 +5,7 @@ export const StyledNavContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 
     nav {
         border-radius: 15px;
@@ -45,7 +45,7 @@ export const StyledNavContainer = styled.div`
         color: white;
         opacity: 0;
         transform: translateY(-30px);
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
     }
 
     a:hover span {

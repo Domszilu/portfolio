@@ -10,6 +10,9 @@ export const StyledCardContainer = styled.div`
     padding: 3rem 5rem 8rem 5rem;
     border-radius: 13px;
     margin-top: 2rem;
+    position: sticky;
+    top: 40px;
+    max-width: 35rem;
 
     img {
         width: 240px;

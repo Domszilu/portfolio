@@ -26,10 +26,11 @@ const device = {
 
 // Main wrapper for dual-column style
 export const DualColumnWrapper = styled.div`
-    min-height: 100vh;
-    /* height: min-content; */
+    /* min-height: 100vh; */
     display: flex;
+    justify-content: center;
     flex-flow: column;
+    margin: auto;
     flex: 1 0 0px;
     gap: 5rem;
 
@@ -43,8 +44,16 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
     padding: 2%;
+    gap: 5rem;
+    @media ${device.tablet} {
+        align-items: start;
+    }
+`;
+
+// Main container for padding between Components
+export const MainContainer = styled.div`
+    padding-bottom: 8rem;
 `;
 
 // Dual-color headings
@@ -57,6 +66,7 @@ export const MainHeading = styled.h1`
     text-align: center;
     line-height: 1;
     white-space: nowrap;
+    margin-bottom: 5rem;
 
     span {
         color: #9d9d9d;
@@ -73,7 +83,7 @@ export const MainHeading = styled.h1`
 export const StyledParagraph = styled.p`
     font-family: "Poppins", serif;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     color: white;
     text-align: center;
     max-width: 65rem;
