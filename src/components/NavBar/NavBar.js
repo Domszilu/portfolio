@@ -5,7 +5,6 @@ export const StyledNavContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 3rem;
 
     nav {
         border-radius: 15px;

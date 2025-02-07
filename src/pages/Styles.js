@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styled Components that may be used for different Components
 
 // media queries
-const size = {
+export const size = {
     mobileS: "320px",
     mobileM: "375px",
     mobileL: "425px",
@@ -13,7 +13,7 @@ const size = {
     desktop: "2560px",
 };
 
-const device = {
+export const device = {
     mobileS: `(min-width: ${size.mobileS})`,
     mobileM: `(min-width: ${size.mobileM})`,
     mobileL: `(min-width: ${size.mobileL})`,
@@ -26,7 +26,6 @@ const device = {
 
 // Main wrapper for dual-column style
 export const DualColumnWrapper = styled.div`
-    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -44,29 +43,26 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
-    gap: 5rem;
+    padding: 0 2%;
     @media ${device.tablet} {
         align-items: start;
     }
 `;
 
 // Main container for padding between Components
-export const MainContainer = styled.div`
-    padding-bottom: 8rem;
-`;
+export const MainContainer = styled.div``;
 
 // Dual-color headings
 export const MainHeading = styled.h1`
     font-family: "Poppins", serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: clamp(2.1em, calc(8vw + 1rem), 10rem);
     color: white;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
     white-space: nowrap;
-    margin-bottom: 5rem;
+    margin: 10rem 0rem 5rem 0rem;
 
     span {
         color: #9d9d9d;
@@ -87,6 +83,7 @@ export const StyledParagraph = styled.p`
     color: white;
     text-align: center;
     max-width: 65rem;
+    padding-left: 1rem;
 
     @media ${device.tablet} {
         text-align: start;

@@ -8,10 +8,10 @@ export const StyledCardContainer = styled.div`
     align-items: center;
     gap: 3rem;
     padding: 3rem 5rem 8rem 5rem;
+    margin-top: 11rem;
     border-radius: 13px;
-    margin-top: 2rem;
     position: sticky;
-    top: 40px;
+    top: 45px;
     max-width: 35rem;
 
     img {
