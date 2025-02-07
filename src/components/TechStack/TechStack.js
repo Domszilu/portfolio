@@ -56,6 +56,7 @@ export const TechStackCard = styled.div`
         p {
             font-weight: 500;
             color: #9d9d9d;
+            white-space: nowrap;
         }
     }
 

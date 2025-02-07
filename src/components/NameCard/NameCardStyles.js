@@ -7,12 +7,12 @@ export const StyledCardContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 3rem 5rem 8rem 5rem;
+    padding: 3rem 0rem 8rem 0rem;
     margin-top: 11rem;
     border-radius: 13px;
     position: sticky;
     top: 45px;
-    max-width: 35rem;
+    width: 34rem;
 
     img {
         width: 240px;
@@ -35,6 +35,5 @@ export const StyledCardContainer = styled.div`
         color: #5e5959;
         text-align: center;
         font-size: 1.7rem;
-        max-width: 29rem;
     }
 `;

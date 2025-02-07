@@ -49,14 +49,11 @@ export const Wrapper = styled.div`
     }
 `;
 
-// Main container for padding between Components
-export const MainContainer = styled.div``;
-
 // Dual-color headings
 export const MainHeading = styled.h1`
     font-family: "Poppins", serif;
     font-weight: 800;
-    font-size: clamp(2.1rem, calc(5vw + 1rem), 10rem);
+    font-size: clamp(4rem, calc(5.5vw + 1rem), 8rem);
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -79,7 +76,7 @@ export const MainHeading = styled.h1`
 export const StyledParagraph = styled.p`
     font-family: "Poppins", serif;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     text-align: center;
     max-width: 65rem;
