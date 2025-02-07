@@ -6,11 +6,14 @@ import {
     StyledLabel,
     StyledTextArea,
 } from "./StyledContact.js";
-import { Wrapper } from "../../pages/Styles";
+import { MainHeading, Wrapper } from "../../pages/Styles";
 
 const Contact = () => {
     return (
         <>
+            <MainHeading>
+                Let's work <span>together</span>
+            </MainHeading>
             <StyledForm>
                 <InputGroup>
                     <div>
@@ -23,7 +26,7 @@ const Contact = () => {
                     </div>
                 </InputGroup>
                 <StyledLabel>Message</StyledLabel>
-                <StyledTextArea />
+                <StyledTextArea rows={7} placeholder="Your message" />
             </StyledForm>
         </>
     );

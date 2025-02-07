@@ -7,7 +7,7 @@ export const StyledCardContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 3rem;
+    padding: 3rem 5rem 8rem 5rem;
     border-radius: 13px;
     margin-top: 2rem;
 
@@ -21,7 +21,9 @@ export const StyledCardContainer = styled.div`
     h1 {
         font-family: "Poppins", serif;
         font-weight: 900;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        text-align: center;
+        white-space: nowrap;
     }
 
     p {
@@ -29,7 +31,7 @@ export const StyledCardContainer = styled.div`
         font-weight: 600;
         color: #5e5959;
         text-align: center;
-        font-size: 1.8rem;
-        max-width: 24rem;
+        font-size: 1.7rem;
+        max-width: 29rem;
     }
 `;

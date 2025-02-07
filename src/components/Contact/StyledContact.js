@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledForm = styled.form`
     width: 100%;
-    max-width: 500px;
+    max-width: 65rem;
     color: #dbc6c6;
     margin: auto;
     display: flex;
@@ -33,9 +33,20 @@ export const StyledInput = styled.input`
     padding: 12px;
     width: 100%;
     border: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    &&::placeholder {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+    }
 `;
 
 export const StyledTextArea = styled.textarea`
+    border-radius: 8px;
     width: 100%;
+    padding: 12px;
+
+    &&::placeholder {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+    }
 `;

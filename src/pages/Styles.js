@@ -1,18 +1,53 @@
 import styled from "styled-components";
 
-export const StyledSeparator = styled.div`
+// Styled Components that may be used for different Components
+
+// media queries
+const size = {
+    mobileS: "320px",
+    mobileM: "375px",
+    mobileL: "425px",
+    tablet: "768px",
+    laptop: "1024px",
+    laptopL: "1440px",
+    desktop: "2560px",
+};
+
+const device = {
+    mobileS: `(min-width: ${size.mobileS})`,
+    mobileM: `(min-width: ${size.mobileM})`,
+    mobileL: `(min-width: ${size.mobileL})`,
+    tablet: `(min-width: ${size.tablet})`,
+    laptop: `(min-width: ${size.laptop})`,
+    laptopL: `(min-width: ${size.laptopL})`,
+    desktop: `(min-width: ${size.desktop})`,
+    desktopL: `(min-width: ${size.desktop})`,
+};
+
+// Main wrapper for dual-column style
+export const DualColumnWrapper = styled.div`
+    min-height: 100vh;
+    /* height: min-content; */
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    flex: 1 0 0px;
+    gap: 5rem;
+
+    @media ${device.tablet} {
+        flex-direction: row;
+    }
 `;
 
+// Wrapper with Flexbox, centered alignment
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding: 5%;
+    padding: 2%;
 `;
 
+// Dual-color headings
 export const MainHeading = styled.h1`
     font-family: "Poppins", serif;
     font-weight: 900;
@@ -28,12 +63,22 @@ export const MainHeading = styled.h1`
         text-transform: uppercase;
         display: block;
     }
+
+    @media ${device.tablet} {
+        text-align: start;
+    }
 `;
 
+// Paragraphs
 export const StyledParagraph = styled.p`
     font-family: "Poppins", serif;
     font-weight: 500;
     font-size: 1.9rem;
     color: white;
     text-align: center;
+    max-width: 65rem;
+
+    @media ${device.tablet} {
+        text-align: start;
+    }
 `;
