@@ -33,7 +33,7 @@ export const DualColumnWrapper = styled.div`
     flex: 1 0 0px;
     gap: 5rem;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         flex-direction: row;
     }
 `;
@@ -44,7 +44,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 2%;
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         align-items: start;
     }
 `;
@@ -56,7 +56,7 @@ export const MainContainer = styled.div``;
 export const MainHeading = styled.h1`
     font-family: "Poppins", serif;
     font-weight: 800;
-    font-size: clamp(2.1em, calc(8vw + 1rem), 10rem);
+    font-size: clamp(2.1rem, calc(5vw + 1rem), 10rem);
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -70,7 +70,7 @@ export const MainHeading = styled.h1`
         display: block;
     }
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         text-align: start;
     }
 `;
@@ -85,7 +85,7 @@ export const StyledParagraph = styled.p`
     max-width: 65rem;
     padding-left: 1rem;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         text-align: start;
     }
 `;

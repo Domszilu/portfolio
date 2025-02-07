@@ -3,6 +3,7 @@ import { device } from "../../pages/Styles";
 
 export const TechStackCardContainer = styled.div`
     padding-left: 1rem;
+    padding-bottom: 3.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -22,7 +23,7 @@ export const TechStackCardContainer = styled.div`
         cursor: pointer;
         transition: 0.5s;
         position: absolute;
-        bottom: -3rem;
+        bottom: 0;
         left: 2rem;
 
         &:hover {
@@ -36,7 +37,6 @@ export const TechStackCard = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    cursor: pointer;
     padding: 1rem 1rem 0.5rem 1rem;
     border-radius: 8px;
     transition: 0.5s;

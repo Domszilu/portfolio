@@ -9,8 +9,8 @@ const NameCard = () => {
                 <img src={Image} alt="Card Image" />
                 <h1>Dominik Mészáros</h1>
                 <p>
-                    Fresh and crispy Web Developer gravitating towards
-                    meaningful projects.
+                    Berlin based, fresh and crispy Web Developer gravitating
+                    towards meaningful projects.
                 </p>
             </StyledCardContainer>
         </>

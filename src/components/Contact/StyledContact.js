@@ -6,6 +6,7 @@ export const StyledForm = styled.form`
     color: #dbc6c6;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 `;
 
 export const InputGroup = styled.div`

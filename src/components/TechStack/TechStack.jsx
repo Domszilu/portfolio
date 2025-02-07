@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MainHeading } from "../../pages/Styles";
 import { TechStackCard, TechStackCardContainer } from "./TechStack.js";
 import StackIcon from "tech-stack-icons";
+import { useLocation } from "react-router";
 
 // Array of objects for dynamic display
 const techStackItems = [
@@ -20,10 +21,14 @@ const techStackItems = [
 ];
 
 const TechStack = () => {
+    // logic for rendering the Tech Stack items
     const [showAll, setShowAll] = useState(false);
     const visibleStackItems = showAll
         ? techStackItems
         : techStackItems.slice(0, 4);
+
+    // get current route
+    const location = useLocation();
 
     return (
         <>
