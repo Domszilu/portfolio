@@ -6,9 +6,28 @@ export const TechStackCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
     @media ${device.tablet} {
         display: grid;
         grid-template-columns: auto auto;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: #9d9d9d;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        width: fit-content;
+        cursor: pointer;
+        transition: 0.5s;
+        position: absolute;
+        bottom: -3rem;
+        left: 2rem;
+
+        &:hover {
+            color: white;
+        }
     }
 `;
 
