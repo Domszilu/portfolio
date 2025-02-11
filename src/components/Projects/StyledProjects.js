@@ -29,9 +29,16 @@ export const ProjectContainer = styled.div`
         color: white;
     }
 
-    p {
-        font-weight: 500;
+    .created-at {
+        font-style: italic;
         color: #9d9d9d;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .project-description {
+        font-weight: 500;
+        color: rgb(207, 205, 205);
     }
 
     img {

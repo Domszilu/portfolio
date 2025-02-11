@@ -1,4 +1,5 @@
 import Contact from "../components/Contact/Contact.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import NameCard from "../components/NameCard/NameCard.jsx";
 import NavBar from "../components/NavBar/NavBar.jsx";
@@ -23,6 +24,7 @@ const Home = () => {
                     </Wrapper>
                 </DualColumnWrapper>
             </Wrapper>
+            <Footer />
         </>
     );
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import { DualColumnWrapper, MainHeading, Wrapper } from "../../pages/Styles";
 import { ProjectContainer, ProjectsMainContainer } from "./StyledProjects";
 import projects from "../../data/projects.js";
@@ -8,7 +7,7 @@ import NameCard from "../NameCard/NameCard.jsx";
 import Contact from "../Contact/Contact.jsx";
 
 const Projects = () => {
-    // get current route
+    // get current route/endpoint
     const location = useLocation();
     return (
         <>
@@ -35,7 +34,12 @@ const Projects = () => {
                                 />
                                 <div className="project-description-container">
                                     <h3>{project.name}</h3>
-                                    <p>{project.description}</p>
+                                    <p className="created-at">
+                                        {project.createdAt}
+                                    </p>
+                                    <p className="project-description">
+                                        {project.description}
+                                    </p>
                                 </div>
                             </ProjectContainer>
                         ))}

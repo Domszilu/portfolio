@@ -8,6 +8,7 @@ const projects = [
         description:
             "Final project created with a team for my training course.",
         thumbnail: TattifyThumbnail,
+        createdAt: "November 2024",
         url: "https://github.com/WebDevFinalProject/tattify",
     },
     {
@@ -15,6 +16,7 @@ const projects = [
         description:
             "Project developed for the React module of my training course.",
         thumbnail: AstroThumbnail,
+        createdAt: "September 2024",
         url: "https://github.com/Domszilu/astrology-website",
     },
     {
@@ -22,6 +24,7 @@ const projects = [
         description:
             "The very first project I developed. Made for the course's UI Basics module.",
         thumbnail: FunService,
+        createdAt: "April 2024",
         url: "https://github.com/Domszilu/fun-service",
     },
 ];
