@@ -4,7 +4,7 @@ export const StyledNavContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
 
     nav {
         border-radius: 15px;
