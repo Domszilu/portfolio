@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
 
     p {
         font-family: "Poppins", serif;
-        color: #dbc6c6;
+        color: #9d9d9d;
     }
 
     a {

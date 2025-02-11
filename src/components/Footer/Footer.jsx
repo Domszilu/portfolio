@@ -5,8 +5,8 @@ const Footer = () => {
         <>
             <FooterWrapper>
                 <p>
-                    Website design is a customized version of a free template
-                    created by{" "}
+                    The design of the website is a customized version of a free
+                    template created by{" "}
                     <a
                         href="https://templyo.io/"
                         target="_blank"

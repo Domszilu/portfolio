@@ -7,6 +7,7 @@ import NavBar from "../NavBar/NavBar.jsx";
 import NameCard from "../NameCard/NameCard.jsx";
 import Contact from "../Contact/Contact.jsx";
 import useTechStack from "../../hooks/useTechStack.js";
+import Footer from "../Footer/Footer.jsx";
 
 const TechStack = () => {
     // custom hook, contains logic for conditional rendering
@@ -70,6 +71,7 @@ const TechStack = () => {
                             </Wrapper>
                         </DualColumnWrapper>
                     </Wrapper>
+                    <Footer />
                 </>
             )}
         </>

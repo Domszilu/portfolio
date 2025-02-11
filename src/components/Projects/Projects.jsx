@@ -5,6 +5,7 @@ import { useLocation } from "react-router";
 import NavBar from "../NavBar/NavBar.jsx";
 import NameCard from "../NameCard/NameCard.jsx";
 import Contact from "../Contact/Contact.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 const Projects = () => {
     // get current route/endpoint
@@ -85,6 +86,7 @@ const Projects = () => {
                             </Wrapper>
                         </DualColumnWrapper>
                     </Wrapper>
+                    <Footer />
                 </>
             )}
         </>
