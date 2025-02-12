@@ -16,6 +16,27 @@ import NameCard from "../NameCard/NameCard.jsx";
 const Contact = () => {
     const location = useLocation();
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = {
+            name,
+            email,
+            message,
+        };
+        try {
+            const response = await fetch("https://localhost:5000/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+            const data = await response.json();
+            alert(data.success || data.error);
+        } catch (error) {
+            console.error(error);
+            alert("Something went wrong! :(");
+        }
+    };
+
     return (
         <>
             {location.pathname !== "/contact" && (
