@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     InputGroup,
     StyledButton,
@@ -16,24 +16,42 @@ import NameCard from "../NameCard/NameCard.jsx";
 const Contact = () => {
     const location = useLocation();
 
+    // state to store form data
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    // state for success/error message
+    const [status, setStatus] = useState(null);
+
+    // handle input changes
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const formData = {
-            name,
-            email,
-            message,
-        };
+        setStatus("Sending...");
+
         try {
-            const response = await fetch("https://localhost:5000/send-email", {
+            const response = await fetch("http://localhost:5000/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
-            const data = await response.json();
-            alert(data.success || data.error);
+
+            const result = await response.json();
+            if (response.ok) {
+                setStatus("Message sent successfully!");
+                setFormData({ name: "", email: "", message: "" }); // Clear form
+            } else {
+                setStatus(result.error || "Failed to send message.");
+            }
         } catch (error) {
-            console.error(error);
-            alert("Something went wrong! :(");
+            setStatus("An error occurred. Please try again.");
         }
     };
 
@@ -41,23 +59,43 @@ const Contact = () => {
         <>
             {location.pathname !== "/contact" && (
                 <>
-                    <StyledForm>
+                    <StyledForm onSubmit={handleSubmit}>
                         <MainHeading>
                             Let's work <span>together</span>
                         </MainHeading>
                         <InputGroup>
                             <div>
                                 <StyledLabel>Name</StyledLabel>
-                                <StyledInput placeholder="Your name" />
+                                <StyledInput
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    placeholder="Your name"
+                                    required
+                                />
                             </div>
                             <div>
                                 <StyledLabel>Email</StyledLabel>
-                                <StyledInput placeholder="your@email.com" />
+                                <StyledInput
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="your@email.com"
+                                    required
+                                />
                             </div>
                         </InputGroup>
                         <StyledLabel>Message</StyledLabel>
-                        <StyledTextArea rows={7} placeholder="Your message" />
-                        <StyledButton>Send</StyledButton>
+                        <StyledTextArea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows={7}
+                            placeholder="Your message"
+                            required
+                        />
+                        <StyledButton type="submit">Send</StyledButton>
+                        {status && <p>{status}</p>}
                     </StyledForm>
                 </>
             )}
@@ -70,26 +108,45 @@ const Contact = () => {
                                 <NameCard />
                             </Wrapper>
                             <Wrapper>
-                                <StyledForm>
+                                <StyledForm onSubmit={handleSubmit}>
                                     <MainHeading>
                                         Let's work <span>together</span>
                                     </MainHeading>
                                     <InputGroup>
                                         <div>
                                             <StyledLabel>Name</StyledLabel>
-                                            <StyledInput placeholder="Your name" />
+                                            <StyledInput
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                placeholder="Your name"
+                                                required
+                                            />
                                         </div>
                                         <div>
                                             <StyledLabel>Email</StyledLabel>
-                                            <StyledInput placeholder="your@email.com" />
+                                            <StyledInput
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                placeholder="your@email.com"
+                                                required
+                                            />
                                         </div>
                                     </InputGroup>
                                     <StyledLabel>Message</StyledLabel>
                                     <StyledTextArea
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
                                         rows={7}
                                         placeholder="Your message"
                                     />
-                                    <StyledButton>Send</StyledButton>
+                                    <StyledButton type="submit">
+                                        Send
+                                    </StyledButton>
+                                    {status && <p>{status}</p>}
                                 </StyledForm>
                             </Wrapper>
                         </DualColumnWrapper>
