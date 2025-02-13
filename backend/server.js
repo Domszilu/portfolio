@@ -8,7 +8,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json()); //parse json requests
-app.use(cors()); // allow frontend to connect
+app.use(
+    cors({
+        origin: "https://portfolio-domszilus-projects.vercel.app",
+        methods: "GET,POST",
+        allowedHeaders: "Content-Type",
+    })
+);
 
 app.use("/contact", contactRoutes);
 
