@@ -9,3 +9,8 @@
 #### Frontend
 
 -   [Vercel](https://vercel.com/)
+
+## To be added:
+
+-   fix Contact Form
+-   update Readme file
