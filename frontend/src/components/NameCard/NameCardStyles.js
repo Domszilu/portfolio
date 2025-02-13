@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../pages/Styles";
 
 export const StyledCardContainer = styled.div`
     background-color: white;
@@ -8,11 +9,14 @@ export const StyledCardContainer = styled.div`
     align-items: center;
     gap: 3rem;
     padding: 3rem 0rem 8rem 0rem;
-    margin-top: 11rem;
+    margin-top: 5rem;
     border-radius: 13px;
     position: sticky;
     top: 45px;
     width: 34rem;
+    @media ${device.tablet} {
+        margin-top: 11rem;
+    }
 
     img {
         width: 240px;
