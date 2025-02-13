@@ -13,7 +13,8 @@ export const StyledCardContainer = styled.div`
     border-radius: 13px;
     position: sticky;
     top: 45px;
-    width: 34rem;
+    /* width: 34rem; */
+    width: clamp(30rem, 50vw, 34rem);
     @media ${device.tablet} {
         margin-top: 11rem;
     }
@@ -28,7 +29,7 @@ export const StyledCardContainer = styled.div`
     h1 {
         font-family: "Poppins", serif;
         font-weight: 900;
-        font-size: 3rem;
+        font-size: 2.9rem;
         text-align: center;
         white-space: nowrap;
     }
@@ -38,6 +39,6 @@ export const StyledCardContainer = styled.div`
         font-weight: 600;
         color: #5e5959;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 `;

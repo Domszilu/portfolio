@@ -18,8 +18,8 @@ const Home = () => {
                     </Wrapper>
                     <Wrapper>
                         <Hero />
-                        <Projects />
-                        <TechStack />
+                        {/* <Projects /> */}
+                        {/* <TechStack /> */}
                         <Contact />
                     </Wrapper>
                 </DualColumnWrapper>

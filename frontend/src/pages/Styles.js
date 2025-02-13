@@ -32,6 +32,7 @@ export const DualColumnWrapper = styled.div`
     margin: auto;
     flex: 1 0 0px;
     gap: 5rem;
+    width: 100%;
 
     @media ${device.laptop} {
         flex-direction: row;
