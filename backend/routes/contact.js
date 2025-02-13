@@ -4,6 +4,12 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 router.post("/", async (request, response) => {
+    response.setHeader(
+        "Access-Control-Allow-Origin",
+        "https://portfolio-domszilus-projects.vercel.app"
+    );
+    response.setHeader("Access-Control-Allow-Methods", "POST");
+    response.setHeader("Access-Control-Allow-Headers", "Content-Type");
     const { name, email, message } = request.body;
 
     if (!name || !email || !message) {

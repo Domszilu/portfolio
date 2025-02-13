@@ -13,6 +13,7 @@ app.use(
         origin: "https://portfolio-domszilus-projects.vercel.app",
         methods: "GET,POST",
         allowedHeaders: "Content-Type",
+        credentials: true,
     })
 );
 
