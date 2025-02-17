@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); //parse json requests
 app.use(
     cors({
-        origin: "https://portfolio-domszilus-projects.vercel.app", // Your frontend URL
+        origin: "https://portfolio-domszilus-projects.vercel.app",
         methods: ["GET,POST"],
         allowedHeaders: "Content-Type",
         credentials: true,
