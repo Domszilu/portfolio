@@ -23,7 +23,7 @@ const useContactForm = () => {
 
         try {
             const response = await fetch(
-                "https://portfolio-x43k.onrender.com",
+                "https://portfolio-x43k.onrender.com/contact",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
