@@ -12,6 +12,5 @@
 
 ## To be added:
 
--   fix Contact Form
--   update Readme file
--   fix AGAIN
+-   update readme
+-   experiences (in progress)

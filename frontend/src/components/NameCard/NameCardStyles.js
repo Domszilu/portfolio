@@ -49,8 +49,8 @@ export const StyledCardContainer = styled.div`
         margin-top: 1rem;
 
         svg {
-            height: 4.3rem;
-            width: 4.3rem;
+            height: 4rem;
+            width: 4rem;
             cursor: pointer;
             color: rgb(234, 116, 116);
             transition: 0.5s;

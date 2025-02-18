@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledCardContainer } from "./NameCardStyles";
 import Image from "../../assets/profile-image.jpg";
-import { FaLinkedinIn } from "react-icons/fa";
+import { RiLinkedinLine } from "react-icons/ri";
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
 
 const NameCard = () => {
@@ -22,7 +22,7 @@ const NameCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaLinkedinIn />
+                        <RiLinkedinLine />
                     </a>
                     <a
                         href="https://www.instagram.com/dominik_andras/"
@@ -36,7 +36,7 @@ const NameCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaGithub />
+                        <FiGithub />
                     </a>
                     <a href="mailto:m.dominik.andras@gmail.com">
                         <MdOutlineMailOutline />

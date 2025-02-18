@@ -1,4 +1,5 @@
 import Contact from "../components/Contact/Contact.jsx";
+import Experience from "../components/Experience/Experience.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import NameCard from "../components/NameCard/NameCard.jsx";
@@ -19,6 +20,7 @@ const Home = () => {
                     <Wrapper>
                         <Hero />
                         <Projects />
+                        <Experience />
                         <TechStack />
                         <Contact />
                     </Wrapper>

@@ -1,4 +1,4 @@
-const experience = [
+const experiences = [
     {
         company: "We Love Budapest",
         position: "Sales Associate",
@@ -25,6 +25,8 @@ const experience = [
         position: "Fotogalerie Friedrichshain ",
         description:
             "Worked part-time I balanced my time between improving the gallery's social media, designing flyers and posters, curating and putting up exhibitions. When not working, I took German classes, taught myself Graphic Design, Adobe InDesign. A truly transformational period, that showed me I can do more than customer service.",
-        year: "April 2017 - April 2019",
+        year: "September 2019 - December 2023",
     },
 ];
+
+export default experiences;
