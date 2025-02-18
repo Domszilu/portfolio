@@ -7,8 +7,8 @@ export const StyledCardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    padding: 3rem 0rem 8rem 0rem;
+    gap: 4rem;
+    padding: 3rem 1rem 2.5rem 1rem;
     margin-top: 5rem;
     border-radius: 13px;
     position: sticky;
@@ -39,6 +39,26 @@ export const StyledCardContainer = styled.div`
         font-weight: 600;
         color: #5e5959;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .card-icons-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+
+        svg {
+            height: 4.3rem;
+            width: 4.3rem;
+            cursor: pointer;
+            color: rgb(234, 116, 116);
+            transition: 0.5s;
+            padding: 0.8rem;
+            border-radius: 8px;
+            &:hover {
+                background-color: rgb(241, 241, 241);
+            }
+        }
     }
 `;

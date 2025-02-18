@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
     font-weight: 500;
     text-align: center;
     @media ${device.tablet} {
-        padding: 19.8rem 1rem 8rem 1rem;
+        padding: 19.9rem 1rem 8rem 1rem;
     }
     p {
         font-family: "Poppins", serif;
