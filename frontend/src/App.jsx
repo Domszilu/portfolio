@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import TechStack from "./components/TechStack/TechStack.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import Experience from "./components/Experience/Experience.jsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="tools" element={<TechStack />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="experience" element={<Experience />} />
             </Routes>
         </>
     );

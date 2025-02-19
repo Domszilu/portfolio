@@ -4,8 +4,8 @@ export const ExperiencesMainContainer = styled.div`
     display: flex;
     flex-flow: column;
     align-items: start;
-    gap: 3rem;
     max-width: 60rem;
+    gap: 0.5rem;
 `;
 
 export const ExperienceContainer = styled.div`
@@ -17,8 +17,8 @@ export const ExperienceContainer = styled.div`
     border-radius: 8px;
     gap: 1rem;
     transition: 0.5s;
-    /* cursor: pointer; */
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
+    position: relative;
 
     &&:hover {
         background-color: rgb(0, 1, 66);
@@ -30,15 +30,42 @@ export const ExperienceContainer = styled.div`
         color: white;
     }
 
-    .dates {
-        font-style: italic;
-        color: #9d9d9d;
+    h4 {
+        font-weight: 400;
         position: relative;
         bottom: 5px;
+        /* color: rgb(207, 207, 207); */
+    }
+
+    .dates {
+        font-style: italic;
+        color: rgb(180, 180, 180);
+        margin-top: 1rem;
     }
 
     .position-description {
         font-weight: 500;
         color: rgb(207, 205, 205);
+        margin-top: 1rem;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        width: fit-content;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-top: 1rem;
+        color: rgb(255, 144, 144);
+        position: absolute;
+        right: 1rem;
+
+        &:hover {
+            color: white;
+        }
     }
 `;

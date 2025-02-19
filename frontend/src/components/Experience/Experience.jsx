@@ -1,11 +1,14 @@
 import React from "react";
 import { useLocation } from "react-router";
-import { MainHeading } from "../../pages/Styles";
+import { DualColumnWrapper, MainHeading, Wrapper } from "../../pages/Styles";
 import experiences from "../../data/experience";
 import {
     ExperienceContainer,
     ExperiencesMainContainer,
 } from "./StyledExperience";
+import NavBar from "../NavBar/NavBar.jsx";
+import Footer from "../Footer/Footer";
+import NameCard from "../NameCard/NameCard";
 
 const Experience = () => {
     // get current route/endpoint
@@ -23,14 +26,50 @@ const Experience = () => {
                                 <div className="project-description-container">
                                     <h3>{experience.position}</h3>
                                     <h4>{experience.company}</h4>
-                                    <p className="dates">{experience.year}</p>
                                     <p className="position-description">
                                         {experience.description}
                                     </p>
+                                    <p className="dates">{experience.year}</p>
+                                    <button>Read More</button>
                                 </div>
                             </ExperienceContainer>
                         ))}
                     </ExperiencesMainContainer>
+                </>
+            )}
+            {location.pathname == "/experience" && (
+                <>
+                    <NavBar />
+                    <Wrapper>
+                        <DualColumnWrapper>
+                            <Wrapper>
+                                <NameCard />
+                            </Wrapper>
+                            <Wrapper>
+                                <MainHeading>
+                                    My <span>Tech Stack</span>
+                                </MainHeading>
+                                <ExperiencesMainContainer>
+                                    {experiences.map((experience, index) => (
+                                        <ExperienceContainer key={index}>
+                                            <div className="project-description-container">
+                                                <h3>{experience.position}</h3>
+                                                <h4>{experience.company}</h4>
+                                                <p className="position-description">
+                                                    {experience.description}
+                                                </p>
+                                                <p className="dates">
+                                                    {experience.year}
+                                                </p>
+                                                <button>Read More</button>
+                                            </div>
+                                        </ExperienceContainer>
+                                    ))}
+                                </ExperiencesMainContainer>
+                            </Wrapper>
+                        </DualColumnWrapper>
+                    </Wrapper>
+                    <Footer />
                 </>
             )}
         </>
