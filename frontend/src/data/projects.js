@@ -6,10 +6,10 @@ const projects = [
     {
         name: "Tattify",
         description:
-            "Final project created with a team for my training course.",
+            "Final, full stack project created with a team for my training course.",
         thumbnail: TattifyThumbnail,
         createdAt: "November 2024",
-        url: "https://github.com/WebDevFinalProject/tattify",
+        url: "https://tattify-1.onrender.com/",
     },
     {
         name: "AstroDomi",
@@ -17,15 +17,15 @@ const projects = [
             "Project developed for the React module of my training course.",
         thumbnail: AstroThumbnail,
         createdAt: "September 2024",
-        url: "https://github.com/Domszilu/astrology-website",
+        url: "https://astrology-website-2q8d.onrender.com/",
     },
     {
         name: "Fun Service",
         description:
-            "The very first project I developed. Made for the course's UI Basics module.",
+            "The very first project I developed. Made for the course's UI Basics module using HTML and CSS.",
         thumbnail: FunService,
         createdAt: "April 2024",
-        url: "https://github.com/Domszilu/fun-service",
+        url: "https://domszilu.github.io/fun-service/",
     },
 ];
 

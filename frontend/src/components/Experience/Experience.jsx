@@ -1,11 +1,11 @@
 import React from "react";
 import { useLocation } from "react-router";
 import { MainHeading } from "../../pages/Styles";
-import {
-    ProjectContainer,
-    ProjectsMainContainer,
-} from "../Projects/StyledProjects";
 import experiences from "../../data/experience";
+import {
+    ExperienceContainer,
+    ExperiencesMainContainer,
+} from "./StyledExperience";
 
 const Experience = () => {
     // get current route/endpoint
@@ -17,21 +17,19 @@ const Experience = () => {
                     <MainHeading>
                         About My <span>Experience</span>
                     </MainHeading>
-                    <ProjectsMainContainer>
+                    <ExperiencesMainContainer>
                         {experiences.map((experience, index) => (
-                            <ProjectContainer key={index}>
+                            <ExperienceContainer key={index}>
                                 <div className="project-description-container">
                                     <h3>{experience.position}</h3>
-                                    <p className="created-at">
-                                        {experience.year}
-                                    </p>
-                                    <p className="project-description">
+                                    <p className="dates">{experience.year}</p>
+                                    <p className="position-description">
                                         {experience.description}
                                     </p>
                                 </div>
-                            </ProjectContainer>
+                            </ExperienceContainer>
                         ))}
-                    </ProjectsMainContainer>
+                    </ExperiencesMainContainer>
                 </>
             )}
         </>
