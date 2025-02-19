@@ -22,6 +22,7 @@ const Experience = () => {
                             <ExperienceContainer key={index}>
                                 <div className="project-description-container">
                                     <h3>{experience.position}</h3>
+                                    <h4>{experience.company}</h4>
                                     <p className="dates">{experience.year}</p>
                                     <p className="position-description">
                                         {experience.description}

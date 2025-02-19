@@ -49,4 +49,22 @@ export const ProjectContainer = styled.div`
         margin: 1rem;
         aspect-ratio: 1/1;
     }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        width: fit-content;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-top: 1rem;
+        color: rgb(255, 144, 144);
+
+        &:hover {
+            color: white;
+        }
+    }
 `;

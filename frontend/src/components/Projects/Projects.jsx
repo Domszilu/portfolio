@@ -41,6 +41,17 @@ const Projects = () => {
                                     <p className="project-description">
                                         {project.description}
                                     </p>
+                                    <button
+                                        onClick={() =>
+                                            window.open(
+                                                project.sourceCode,
+                                                "_blank",
+                                                "noopener, noreferrer"
+                                            )
+                                        }
+                                    >
+                                        Source code
+                                    </button>
                                 </div>
                             </ProjectContainer>
                         ))}

@@ -17,7 +17,7 @@ export const ExperienceContainer = styled.div`
     border-radius: 8px;
     gap: 1rem;
     transition: 0.5s;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 1rem;
 
     &&:hover {

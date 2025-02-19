@@ -10,6 +10,7 @@ const projects = [
         thumbnail: TattifyThumbnail,
         createdAt: "November 2024",
         url: "https://tattify-1.onrender.com/",
+        sourceCode: "https://github.com/WebDevFinalProject/tattify",
     },
     {
         name: "AstroDomi",
@@ -18,6 +19,7 @@ const projects = [
         thumbnail: AstroThumbnail,
         createdAt: "September 2024",
         url: "https://astrology-website-2q8d.onrender.com/",
+        sourceCode: "https://github.com/Domszilu/astrology-website",
     },
     {
         name: "Fun Service",
@@ -26,6 +28,7 @@ const projects = [
         thumbnail: FunService,
         createdAt: "April 2024",
         url: "https://domszilu.github.io/fun-service/",
+        sourceCode: "https://github.com/Domszilu/fun-service",
     },
 ];
 
