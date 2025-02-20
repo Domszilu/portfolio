@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation } from "react-router";
 import { DualColumnWrapper, MainHeading, Wrapper } from "../../pages/Styles";
 import experiences from "../../data/experience";
@@ -11,8 +10,8 @@ import Footer from "../Footer/Footer";
 import NameCard from "../NameCard/NameCard";
 
 const Experience = () => {
-    // get current route/endpoint
-    const location = useLocation();
+    const location = useLocation(); // get current route
+
     return (
         <>
             {location.pathname !== "/experience" && (
@@ -30,7 +29,7 @@ const Experience = () => {
                                         {experience.description}
                                     </p>
                                     <p className="dates">{experience.year}</p>
-                                    <button>Read More</button>
+                                    {/* <button>Read More</button> */}
                                 </div>
                             </ExperienceContainer>
                         ))}
@@ -61,7 +60,7 @@ const Experience = () => {
                                                 <p className="dates">
                                                     {experience.year}
                                                 </p>
-                                                <button>Read More</button>
+                                                {/* <button>Read More</button> */}
                                             </div>
                                         </ExperienceContainer>
                                     ))}

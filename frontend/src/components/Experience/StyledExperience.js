@@ -5,7 +5,7 @@ export const ExperiencesMainContainer = styled.div`
     flex-flow: column;
     align-items: start;
     max-width: 60rem;
-    gap: 0.5rem;
+    gap: 1rem;
 `;
 
 export const ExperienceContainer = styled.div`
@@ -47,6 +47,12 @@ export const ExperienceContainer = styled.div`
         font-weight: 500;
         color: rgb(207, 205, 205);
         margin-top: 1rem;
+        display: "-webkit-box",
+                                    WebkitLineClamp: isExpanded
+                                        ? "unset"
+                                        : MAX_LINES,
+                                    WebkitBoxOrient: "vertical",
+                                    overflow: "hidden",
     }
 
     button {
