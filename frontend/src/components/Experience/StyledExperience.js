@@ -47,12 +47,6 @@ export const ExperienceContainer = styled.div`
         font-weight: 500;
         color: rgb(207, 205, 205);
         margin-top: 1rem;
-        display: "-webkit-box",
-                                    WebkitLineClamp: isExpanded
-                                        ? "unset"
-                                        : MAX_LINES,
-                                    WebkitBoxOrient: "vertical",
-                                    overflow: "hidden",
     }
 
     button {

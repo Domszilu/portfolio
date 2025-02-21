@@ -1,5 +1,10 @@
 import { useLocation } from "react-router";
-import { DualColumnWrapper, MainHeading, Wrapper } from "../../pages/Styles";
+import {
+    DualColumnWrapper,
+    MainHeading,
+    StyledParagraph,
+    Wrapper,
+} from "../../pages/Styles";
 import experiences from "../../data/experience";
 import {
     ExperienceContainer,
@@ -46,8 +51,9 @@ const Experience = () => {
                             </Wrapper>
                             <Wrapper>
                                 <MainHeading>
-                                    My <span>Tech Stack</span>
+                                    About my <span>experience</span>
                                 </MainHeading>
+                                <StyledParagraph></StyledParagraph>
                                 <ExperiencesMainContainer>
                                     {experiences.map((experience, index) => (
                                         <ExperienceContainer key={index}>

@@ -9,3 +9,7 @@ const useReadMore = () => {
 };
 
 export default useReadMore;
+
+// Incomplete  code, not used anywhere!
+// Initial idea was to add more info to Experiences, show max 4 rows, add a Show More button
+// No longer sure about the idea
