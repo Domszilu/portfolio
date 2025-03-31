@@ -9,8 +9,3 @@
 #### Frontend
 
 -   [Vercel](https://vercel.com/)
-
-## To be added:
-
--   update readme
--   experiences (in progress)
